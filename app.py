@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import pickle
-from pypdf import PdfReader
+from PyPDF2 import PdfReader
 import re
 import streamlit as st
 
