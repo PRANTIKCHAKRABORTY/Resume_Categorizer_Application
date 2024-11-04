@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import pickle
-from PyPDF2 import PdfReader
+from pypdf import PdfReader
 import re
 import streamlit as st
 
@@ -79,7 +79,7 @@ def categorize_resumes(uploaded_files, output_directory):
     return results_df
 
 st.title("Resume Categorizer Application")
-# st.subheader("With Python & Machine Learning")
+st.subheader("With Python & Machine Learning")
 
 uploaded_files = st.file_uploader("Choose PDF files", type="pdf", accept_multiple_files=True)
 output_directory = st.text_input("Output Directory", "categorized_resumes")
